@@ -1,0 +1,12 @@
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.DALC\bin\Debug\Condominio.DALC.dll.config
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.DALC\bin\Debug\Condominio.DALC.dll
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.DALC\bin\Debug\Condominio.DALC.pdb
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.DALC\obj\Debug\Condominio.DALC.dll
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.DALC\obj\Debug\Condominio.DALC.pdb
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\Condominio.DALC\obj\Debug\Condominio.DALC.csprojResolveAssemblyReference.cache
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.DALC\bin\Debug\Condominio.DALC.dll.config
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.DALC\bin\Debug\Condominio.DALC.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.DALC\bin\Debug\Condominio.DALC.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.DALC\obj\Debug\Condominio.DALC.csprojResolveAssemblyReference.cache
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.DALC\obj\Debug\Condominio.DALC.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.DALC\obj\Debug\Condominio.DALC.pdb

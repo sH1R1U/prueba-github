@@ -1,0 +1,16 @@
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\bin\Debug\Condominio.Negocio.dll
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\bin\Debug\Condominio.Negocio.pdb
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\bin\Debug\Condominio.DALC.dll
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\bin\Debug\Oracle.DataAccess.dll
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\bin\Debug\Condominio.DALC.pdb
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\obj\Debug\Condominio.Negocio.csprojResolveAssemblyReference.cache
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\obj\Debug\Condominio.Negocio.dll
+c:\users\elchi\documents\visual studio 2010\Projects\Portafolio\Condominio.Negocio\obj\Debug\Condominio.Negocio.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\bin\Debug\Condominio.Negocio.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\bin\Debug\Condominio.Negocio.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\bin\Debug\Condominio.DALC.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\bin\Debug\Oracle.DataAccess.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\bin\Debug\Condominio.DALC.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\obj\Debug\Condominio.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\obj\Debug\Condominio.Negocio.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\Condominio.Negocio\obj\Debug\Condominio.Negocio.pdb

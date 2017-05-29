@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="ANUNCIOS" EntityType="Model.Store.ANUNCIOS" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="CONDOMINIO" EntityType="Model.Store.CONDOMINIO" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="CONTACTO" EntityType="Model.Store.CONTACTO" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="DETALLEMULTA" EntityType="Model.Store.DETALLEMULTA" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="DETALLERESERVA" EntityType="Model.Store.DETALLERESERVA" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="DETALLESGASCOM" EntityType="Model.Store.DETALLESGASCOM" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="ESTADOPAGO" EntityType="Model.Store.ESTADOPAGO" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="ESTADOUSER" EntityType="Model.Store.ESTADOUSER" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="GASTOSCOMUNES" EntityType="Model.Store.GASTOSCOMUNES" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="MEDIOPAGO" EntityType="Model.Store.MEDIOPAGO" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="PAGOGASCOMUN" EntityType="Model.Store.PAGOGASCOMUN" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="PAGORESERVA" EntityType="Model.Store.PAGORESERVA" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="RECINTORESERVA" EntityType="Model.Store.RECINTORESERVA" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="TIPOUSUARIO" EntityType="Model.Store.TIPOUSUARIO" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="USUARIO" EntityType="Model.Store.USUARIO" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <EntitySet Name="VIVIENDA" EntityType="Model.Store.VIVIENDA" store:Type="Tables" Schema="BDCONDOMINIONEW" />
+    <AssociationSet Name="ANUNCIOS_USUARIO_FK" Association="Model.Store.ANUNCIOS_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="ANUNCIOS" EntitySet="ANUNCIOS" />
+    </AssociationSet>
+    <AssociationSet Name="CONTACTO_USUARIO_FK" Association="Model.Store.CONTACTO_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="CONTACTO" EntitySet="CONTACTO" />
+    </AssociationSet>
+    <AssociationSet Name="DETALLEMULTA_PAGOGASCOM_FK" Association="Model.Store.DETALLEMULTA_PAGOGASCOM_FK">
+      <End Role="PAGOGASCOMUN" EntitySet="PAGOGASCOMUN" />
+      <End Role="DETALLEMULTA" EntitySet="DETALLEMULTA" />
+    </AssociationSet>
+    <AssociationSet Name="DETGASCOM_GASCOMUN_FK" Association="Model.Store.DETGASCOM_GASCOMUN_FK">
+      <End Role="GASTOSCOMUNES" EntitySet="GASTOSCOMUNES" />
+      <End Role="DETALLESGASCOM" EntitySet="DETALLESGASCOM" />
+    </AssociationSet>
+    <AssociationSet Name="DETGASCOM_PAGOGASCOM_FK" Association="Model.Store.DETGASCOM_PAGOGASCOM_FK">
+      <End Role="PAGOGASCOMUN" EntitySet="PAGOGASCOMUN" />
+      <End Role="DETALLESGASCOM" EntitySet="DETALLESGASCOM" />
+    </AssociationSet>
+    <AssociationSet Name="DETRESER_PAGORESER_FK" Association="Model.Store.DETRESER_PAGORESER_FK">
+      <End Role="PAGORESERVA" EntitySet="PAGORESERVA" />
+      <End Role="DETALLERESERVA" EntitySet="DETALLERESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="DETRESER_RECINTORESERVA_FK" Association="Model.Store.DETRESER_RECINTORESERVA_FK">
+      <End Role="RECINTORESERVA" EntitySet="RECINTORESERVA" />
+      <End Role="DETALLERESERVA" EntitySet="DETALLERESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="PAGOGASCOMUN_ESTADOPAGO_FK" Association="Model.Store.PAGOGASCOMUN_ESTADOPAGO_FK">
+      <End Role="ESTADOPAGO" EntitySet="ESTADOPAGO" />
+      <End Role="PAGOGASCOMUN" EntitySet="PAGOGASCOMUN" />
+    </AssociationSet>
+    <AssociationSet Name="PAGOGASCOMUN_MEDIOPAGO_FK" Association="Model.Store.PAGOGASCOMUN_MEDIOPAGO_FK">
+      <End Role="MEDIOPAGO" EntitySet="MEDIOPAGO" />
+      <End Role="PAGOGASCOMUN" EntitySet="PAGOGASCOMUN" />
+    </AssociationSet>
+    <AssociationSet Name="PAGOGASCOMUN_USUARIO_FK" Association="Model.Store.PAGOGASCOMUN_USUARIO_FK">
+      <End Role="USUARIO" EntitySet="USUARIO" />
+      <End Role="PAGOGASCOMUN" EntitySet="PAGOGASCOMUN" />
+    </AssociationSet>
+    <AssociationSet Name="PAGORESERVA_ESTADOPAGO_FK" Association="Model.Store.PAGORESERVA_ESTADOPAGO_FK">
+      <End Role="ESTADOPAGO" EntitySet="ESTADOPAGO" />
+      <End Role="PAGORESERVA" EntitySet="PAGORESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="PAGORESERVA_MEDIOPAGO_FK" Association="Model.Store.PAGORESERVA_MEDIOPAGO_FK">
+      <End Role="MEDIOPAGO" EntitySet="MEDIOPAGO" />
+      <End Role="PAGORESERVA" EntitySet="PAGORESERVA" />
+    </AssociationSet>
+    <AssociationSet Name="TIPOUSUARIO_USUARIO_FK" Association="Model.Store.TIPOUSUARIO_USUARIO_FK">
+      <End Role="TIPOUSUARIO" EntitySet="TIPOUSUARIO" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="USUARIO_ESTADOUSER_FK" Association="Model.Store.USUARIO_ESTADOUSER_FK">
+      <End Role="ESTADOUSER" EntitySet="ESTADOUSER" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="USUARIO_VIVIENDA_FK" Association="Model.Store.USUARIO_VIVIENDA_FK">
+      <End Role="VIVIENDA" EntitySet="VIVIENDA" />
+      <End Role="USUARIO" EntitySet="USUARIO" />
+    </AssociationSet>
+    <AssociationSet Name="VIVIENDA_CONDOMINIO_FK" Association="Model.Store.VIVIENDA_CONDOMINIO_FK">
+      <End Role="CONDOMINIO" EntitySet="CONDOMINIO" />
+      <End Role="VIVIENDA" EntitySet="VIVIENDA" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ANUNCIOS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="TITULOANUNCIO" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="DETALLEANUNCIO" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="IDUSER" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CONDOMINIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="COMUNA" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="DIRECCION" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="NOMBREDUENO" Type="varchar2" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CONTACTO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="DETALLE" Type="varchar2" Nullable="false" MaxLength="500" />
+    <Property Name="SOLUCION" Type="varchar2" MaxLength="500" />
+    <Property Name="NOMBREADMIN" Type="varchar2" MaxLength="50" />
+    <Property Name="IDUSER" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLEMULTA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="OBSERBACIONES" Type="varchar2" MaxLength="500" />
+    <Property Name="DETALLE" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="FECHAMULTA" Type="date" Nullable="false" />
+    <Property Name="VALORMULTA" Type="number" Nullable="false" />
+    <Property Name="IDPAGOGAS" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLERESERVA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="OBSERVACIONES" Type="varchar2" MaxLength="500" />
+    <Property Name="IDRECINTORESERVA" Type="number" Nullable="false" />
+    <Property Name="FECHARESERVA" Type="date" Nullable="false" />
+    <Property Name="VALORRESERVA" Type="number" Nullable="false" />
+    <Property Name="IDPAGORES" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DETALLESGASCOM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="OBSERBACIONES" Type="varchar2" MaxLength="500" />
+    <Property Name="IDGASTOCOMUN" Type="number" Nullable="false" />
+    <Property Name="FECHAGASTOS" Type="date" Nullable="false" />
+    <Property Name="VALORGASTO" Type="number" />
+    <Property Name="IDPAGOGAS" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ESTADOPAGO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NOMBREPAGO" Type="varchar2" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ESTADOUSER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="ESTADO" Type="varchar2" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GASTOSCOMUNES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NOMBREGAS" Type="varchar2" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MEDIOPAGO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NOMMEDIOPAGO" Type="varchar2" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PAGOGASCOMUN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="VALORTOTAL" Type="number" />
+    <Property Name="IDESTADOPAGO" Type="number" Nullable="false" />
+    <Property Name="IDMEDIOPAGO" Type="number" Nullable="false" />
+    <Property Name="FECHAPAGO" Type="date" />
+    <Property Name="IDUSER" Type="number" Nullable="false" />
+    <Property Name="FECHAGASTO" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PAGORESERVA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="VALORTOTAL" Type="number" Nullable="false" />
+    <Property Name="IDESTADOPAGO" Type="number" Nullable="false" />
+    <Property Name="IDMEDIOPAGO" Type="number" Nullable="false" />
+    <Property Name="FECHAPAGO" Type="date" Nullable="false" />
+    <Property Name="IDUSER" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RECINTORESERVA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="VALOR" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPOUSUARIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NOMBRETIPO" Type="varchar2" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="USUARIO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="NOMBRECOMPLETO" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="RUT" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="TELEFONO" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="CORREO" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="NOMBREUSER" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="CONTRASENA" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="IDTIPOUSER" Type="number" Nullable="false" />
+    <Property Name="IDESTADO" Type="number" Nullable="false" />
+    <Property Name="IDVIVIENDA" Type="number" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VIVIENDA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Nullable="false" />
+    <Property Name="TIPOVIVIENDA" Type="varchar2" Nullable="false" MaxLength="50" />
+    <Property Name="IDCONDOMINIO" Type="number" Nullable="false" />
+  </EntityType>
+  <Association Name="ANUNCIOS_USUARIO_FK">
+    <End Role="USUARIO" Type="Model.Store.USUARIO" Multiplicity="1" />
+    <End Role="ANUNCIOS" Type="Model.Store.ANUNCIOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ANUNCIOS">
+        <PropertyRef Name="IDUSER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CONTACTO_USUARIO_FK">
+    <End Role="USUARIO" Type="Model.Store.USUARIO" Multiplicity="1" />
+    <End Role="CONTACTO" Type="Model.Store.CONTACTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CONTACTO">
+        <PropertyRef Name="IDUSER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DETALLEMULTA_PAGOGASCOM_FK">
+    <End Role="PAGOGASCOMUN" Type="Model.Store.PAGOGASCOMUN" Multiplicity="1" />
+    <End Role="DETALLEMULTA" Type="Model.Store.DETALLEMULTA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAGOGASCOMUN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DETALLEMULTA">
+        <PropertyRef Name="IDPAGOGAS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DETGASCOM_GASCOMUN_FK">
+    <End Role="GASTOSCOMUNES" Type="Model.Store.GASTOSCOMUNES" Multiplicity="1" />
+    <End Role="DETALLESGASCOM" Type="Model.Store.DETALLESGASCOM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GASTOSCOMUNES">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DETALLESGASCOM">
+        <PropertyRef Name="IDGASTOCOMUN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DETGASCOM_PAGOGASCOM_FK">
+    <End Role="PAGOGASCOMUN" Type="Model.Store.PAGOGASCOMUN" Multiplicity="1" />
+    <End Role="DETALLESGASCOM" Type="Model.Store.DETALLESGASCOM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAGOGASCOMUN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DETALLESGASCOM">
+        <PropertyRef Name="IDPAGOGAS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DETRESER_PAGORESER_FK">
+    <End Role="PAGORESERVA" Type="Model.Store.PAGORESERVA" Multiplicity="1" />
+    <End Role="DETALLERESERVA" Type="Model.Store.DETALLERESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAGORESERVA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DETALLERESERVA">
+        <PropertyRef Name="IDPAGORES" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DETRESER_RECINTORESERVA_FK">
+    <End Role="RECINTORESERVA" Type="Model.Store.RECINTORESERVA" Multiplicity="1" />
+    <End Role="DETALLERESERVA" Type="Model.Store.DETALLERESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RECINTORESERVA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DETALLERESERVA">
+        <PropertyRef Name="IDRECINTORESERVA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PAGOGASCOMUN_ESTADOPAGO_FK">
+    <End Role="ESTADOPAGO" Type="Model.Store.ESTADOPAGO" Multiplicity="1" />
+    <End Role="PAGOGASCOMUN" Type="Model.Store.PAGOGASCOMUN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOPAGO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PAGOGASCOMUN">
+        <PropertyRef Name="IDESTADOPAGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PAGOGASCOMUN_MEDIOPAGO_FK">
+    <End Role="MEDIOPAGO" Type="Model.Store.MEDIOPAGO" Multiplicity="1" />
+    <End Role="PAGOGASCOMUN" Type="Model.Store.PAGOGASCOMUN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MEDIOPAGO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PAGOGASCOMUN">
+        <PropertyRef Name="IDMEDIOPAGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PAGOGASCOMUN_USUARIO_FK">
+    <End Role="USUARIO" Type="Model.Store.USUARIO" Multiplicity="1" />
+    <End Role="PAGOGASCOMUN" Type="Model.Store.PAGOGASCOMUN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PAGOGASCOMUN">
+        <PropertyRef Name="IDUSER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PAGORESERVA_ESTADOPAGO_FK">
+    <End Role="ESTADOPAGO" Type="Model.Store.ESTADOPAGO" Multiplicity="1" />
+    <End Role="PAGORESERVA" Type="Model.Store.PAGORESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOPAGO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PAGORESERVA">
+        <PropertyRef Name="IDESTADOPAGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PAGORESERVA_MEDIOPAGO_FK">
+    <End Role="MEDIOPAGO" Type="Model.Store.MEDIOPAGO" Multiplicity="1" />
+    <End Role="PAGORESERVA" Type="Model.Store.PAGORESERVA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MEDIOPAGO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PAGORESERVA">
+        <PropertyRef Name="IDMEDIOPAGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TIPOUSUARIO_USUARIO_FK">
+    <End Role="TIPOUSUARIO" Type="Model.Store.TIPOUSUARIO" Multiplicity="1" />
+    <End Role="USUARIO" Type="Model.Store.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPOUSUARIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="IDTIPOUSER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="USUARIO_ESTADOUSER_FK">
+    <End Role="ESTADOUSER" Type="Model.Store.ESTADOUSER" Multiplicity="1" />
+    <End Role="USUARIO" Type="Model.Store.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOUSER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="IDESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="USUARIO_VIVIENDA_FK">
+    <End Role="VIVIENDA" Type="Model.Store.VIVIENDA" Multiplicity="1" />
+    <End Role="USUARIO" Type="Model.Store.USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VIVIENDA">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="USUARIO">
+        <PropertyRef Name="IDVIVIENDA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VIVIENDA_CONDOMINIO_FK">
+    <End Role="CONDOMINIO" Type="Model.Store.CONDOMINIO" Multiplicity="1" />
+    <End Role="VIVIENDA" Type="Model.Store.VIVIENDA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CONDOMINIO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="VIVIENDA">
+        <PropertyRef Name="IDCONDOMINIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,20 @@
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\obj\Debug\WebCondominio.csprojResolveAssemblyReference.cache
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\bin\WebCondominio.dll
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\bin\WebCondominio.pdb
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\bin\Condominio.Negocio.dll
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\bin\Oracle.DataAccess.dll
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\bin\Condominio.DALC.dll
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\bin\Condominio.Negocio.pdb
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\bin\Condominio.DALC.pdb
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\obj\Debug\WebCondominio.dll
+C:\Users\elchi\Documents\Visual Studio 2010\Projects\Portafolio\WebCondominio\obj\Debug\WebCondominio.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\bin\WebCondominio.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\bin\WebCondominio.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\bin\Condominio.Negocio.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\bin\Oracle.DataAccess.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\bin\Condominio.DALC.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\bin\Condominio.Negocio.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\bin\Condominio.DALC.pdb
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\obj\Debug\WebCondominio.csprojResolveAssemblyReference.cache
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\obj\Debug\WebCondominio.dll
+C:\Users\elchi\Desktop\Portafolio\Portafolio\WebCondominio\obj\Debug\WebCondominio.pdb

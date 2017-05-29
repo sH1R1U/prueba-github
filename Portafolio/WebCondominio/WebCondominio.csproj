@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C10DFF45-CB0A-4617-A510-12DE097B157F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebCondominio</RootNamespace>
+    <AssemblyName>WebCondominio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminConsultaAreas.aspx" />
+    <Content Include="AdminConsultaMorosos.aspx" />
+    <Content Include="AdminConsultaResi.aspx" />
+    <Content Include="AdminContactoResidente.aspx" />
+    <Content Include="AdminGestionMulta.aspx" />
+    <Content Include="AdminHabilitarUser.aspx" />
+    <Content Include="Administrador.aspx" />
+    <Content Include="AdminMiPerfil.aspx" />
+    <Content Include="AdminReservarAreasComu.aspx" />
+    <Content Include="AdminVerificaPagoGasto.aspx" />
+    <Content Include="ConserConsuInforResidente.aspx" />
+    <Content Include="ConserConsultaAreas.aspx" />
+    <Content Include="ConserConsultaMorosos.aspx" />
+    <Content Include="ConserConsultaMultas.aspx" />
+    <Content Include="ConserConsultaPagoGastos.aspx" />
+    <Content Include="ConserConsultaPagoMultas.aspx" />
+    <Content Include="Conserje.aspx" />
+    <Content Include="ConserjeMiPerfil.aspx" />
+    <Content Include="ConserReservarAreas.aspx" />
+    <Content Include="css\bootstrap-table.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="DirecConsuInforResidente.aspx" />
+    <Content Include="DirecConsultaAreas.aspx" />
+    <Content Include="DirecConsultaMorosos.aspx" />
+    <Content Include="DirecConsultaPagoGastos.aspx" />
+    <Content Include="DirecConsultaPagoMultas.aspx" />
+    <Content Include="Directiva.aspx" />
+    <Content Include="DirectivaMiPerfil.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap-table.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="ResiConsultaAreas.aspx" />
+    <Content Include="ResiConsultaGasto.aspx" />
+    <Content Include="ResiConsultarMorosidad.aspx" />
+    <Content Include="ResiConsultarMultas.aspx" />
+    <Content Include="ResiContacto.aspx" />
+    <Content Include="Residente.aspx" />
+    <Content Include="ResidenteMiPerfil.aspx" />
+    <Content Include="ResiIngresaObservacionGasto.aspx" />
+    <Content Include="ResiPagarGasto.aspx" />
+    <Content Include="ResiReservaAreasComunes.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminConsultaAreas.aspx.cs">
+      <DependentUpon>AdminConsultaAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminConsultaAreas.aspx.designer.cs">
+      <DependentUpon>AdminConsultaAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminConsultaMorosos.aspx.cs">
+      <DependentUpon>AdminConsultaMorosos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminConsultaMorosos.aspx.designer.cs">
+      <DependentUpon>AdminConsultaMorosos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminConsultaResi.aspx.cs">
+      <DependentUpon>AdminConsultaResi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminConsultaResi.aspx.designer.cs">
+      <DependentUpon>AdminConsultaResi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminContactoResidente.aspx.cs">
+      <DependentUpon>AdminContactoResidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminContactoResidente.aspx.designer.cs">
+      <DependentUpon>AdminContactoResidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGestionMulta.aspx.cs">
+      <DependentUpon>AdminGestionMulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminGestionMulta.aspx.designer.cs">
+      <DependentUpon>AdminGestionMulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHabilitarUser.aspx.cs">
+      <DependentUpon>AdminHabilitarUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHabilitarUser.aspx.designer.cs">
+      <DependentUpon>AdminHabilitarUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMiPerfil.aspx.cs">
+      <DependentUpon>AdminMiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMiPerfil.aspx.designer.cs">
+      <DependentUpon>AdminMiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReservarAreasComu.aspx.cs">
+      <DependentUpon>AdminReservarAreasComu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReservarAreasComu.aspx.designer.cs">
+      <DependentUpon>AdminReservarAreasComu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminVerificaPagoGasto.aspx.cs">
+      <DependentUpon>AdminVerificaPagoGasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminVerificaPagoGasto.aspx.designer.cs">
+      <DependentUpon>AdminVerificaPagoGasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserConsuInforResidente.aspx.cs">
+      <DependentUpon>ConserConsuInforResidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserConsuInforResidente.aspx.designer.cs">
+      <DependentUpon>ConserConsuInforResidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserConsultaAreas.aspx.cs">
+      <DependentUpon>ConserConsultaAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserConsultaAreas.aspx.designer.cs">
+      <DependentUpon>ConserConsultaAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserConsultaMorosos.aspx.cs">
+      <DependentUpon>ConserConsultaMorosos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserConsultaMorosos.aspx.designer.cs">
+      <DependentUpon>ConserConsultaMorosos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserConsultaMultas.aspx.cs">
+      <DependentUpon>ConserConsultaMultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserConsultaMultas.aspx.designer.cs">
+      <DependentUpon>ConserConsultaMultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserConsultaPagoGastos.aspx.cs">
+      <DependentUpon>ConserConsultaPagoGastos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserConsultaPagoGastos.aspx.designer.cs">
+      <DependentUpon>ConserConsultaPagoGastos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserConsultaPagoMultas.aspx.cs">
+      <DependentUpon>ConserConsultaPagoMultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserConsultaPagoMultas.aspx.designer.cs">
+      <DependentUpon>ConserConsultaPagoMultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conserje.aspx.cs">
+      <DependentUpon>Conserje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conserje.aspx.designer.cs">
+      <DependentUpon>Conserje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserjeMiPerfil.aspx.cs">
+      <DependentUpon>ConserjeMiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserjeMiPerfil.aspx.designer.cs">
+      <DependentUpon>ConserjeMiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConserReservarAreas.aspx.cs">
+      <DependentUpon>ConserReservarAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConserReservarAreas.aspx.designer.cs">
+      <DependentUpon>ConserReservarAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DirecConsuInforResidente.aspx.cs">
+      <DependentUpon>DirecConsuInforResidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirecConsuInforResidente.aspx.designer.cs">
+      <DependentUpon>DirecConsuInforResidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DirecConsultaAreas.aspx.cs">
+      <DependentUpon>DirecConsultaAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirecConsultaAreas.aspx.designer.cs">
+      <DependentUpon>DirecConsultaAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DirecConsultaMorosos.aspx.cs">
+      <DependentUpon>DirecConsultaMorosos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirecConsultaMorosos.aspx.designer.cs">
+      <DependentUpon>DirecConsultaMorosos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DirecConsultaPagoGastos.aspx.cs">
+      <DependentUpon>DirecConsultaPagoGastos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirecConsultaPagoGastos.aspx.designer.cs">
+      <DependentUpon>DirecConsultaPagoGastos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DirecConsultaPagoMultas.aspx.cs">
+      <DependentUpon>DirecConsultaPagoMultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirecConsultaPagoMultas.aspx.designer.cs">
+      <DependentUpon>DirecConsultaPagoMultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directiva.aspx.cs">
+      <DependentUpon>Directiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directiva.aspx.designer.cs">
+      <DependentUpon>Directiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DirectivaMiPerfil.aspx.cs">
+      <DependentUpon>DirectivaMiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirectivaMiPerfil.aspx.designer.cs">
+      <DependentUpon>DirectivaMiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResiConsultaAreas.aspx.cs">
+      <DependentUpon>ResiConsultaAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiConsultaAreas.aspx.designer.cs">
+      <DependentUpon>ResiConsultaAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResiConsultaGasto.aspx.cs">
+      <DependentUpon>ResiConsultaGasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiConsultaGasto.aspx.designer.cs">
+      <DependentUpon>ResiConsultaGasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResiConsultarMorosidad.aspx.cs">
+      <DependentUpon>ResiConsultarMorosidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiConsultarMorosidad.aspx.designer.cs">
+      <DependentUpon>ResiConsultarMorosidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResiConsultarMultas.aspx.cs">
+      <DependentUpon>ResiConsultarMultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiConsultarMultas.aspx.designer.cs">
+      <DependentUpon>ResiConsultarMultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResiContacto.aspx.cs">
+      <DependentUpon>ResiContacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiContacto.aspx.designer.cs">
+      <DependentUpon>ResiContacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Residente.aspx.cs">
+      <DependentUpon>Residente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Residente.aspx.designer.cs">
+      <DependentUpon>Residente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResidenteMiPerfil.aspx.cs">
+      <DependentUpon>ResidenteMiPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResidenteMiPerfil.aspx.designer.cs">
+      <DependentUpon>ResidenteMiPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResiIngresaObservacionGasto.aspx.cs">
+      <DependentUpon>ResiIngresaObservacionGasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiIngresaObservacionGasto.aspx.designer.cs">
+      <DependentUpon>ResiIngresaObservacionGasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResiPagarGasto.aspx.cs">
+      <DependentUpon>ResiPagarGasto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiPagarGasto.aspx.designer.cs">
+      <DependentUpon>ResiPagarGasto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResiReservaAreasComunes.aspx.cs">
+      <DependentUpon>ResiReservaAreasComunes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResiReservaAreasComunes.aspx.designer.cs">
+      <DependentUpon>ResiReservaAreasComunes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAdministrador.Master.cs">
+      <DependentUpon>SiteAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteAdministrador.Master.designer.cs">
+      <DependentUpon>SiteAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteConseje.Master.cs">
+      <DependentUpon>SiteConseje.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteConseje.Master.designer.cs">
+      <DependentUpon>SiteConseje.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteDirectiva.Master.cs">
+      <DependentUpon>SiteDirectiva.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteDirectiva.Master.designer.cs">
+      <DependentUpon>SiteDirectiva.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteResidente.Master.cs">
+      <DependentUpon>SiteResidente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteResidente.Master.designer.cs">
+      <DependentUpon>SiteResidente.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\bootstrap-theme.css.map" />
+    <None Include="css\bootstrap.css.map" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="SiteAdministrador.Master" />
+    <Content Include="SiteConseje.Master" />
+    <Content Include="SiteDirectiva.Master" />
+    <Content Include="SiteResidente.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Condominio.Negocio\Condominio.Negocio.csproj">
+      <Project>{F0720C29-192A-419A-8789-6FE537BC2774}</Project>
+      <Name>Condominio.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12061</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
